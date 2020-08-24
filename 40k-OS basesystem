@@ -1,0 +1,280 @@
+using System;
+using System.IO;
+using System.Threading;
+
+namespace _40k_OS
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        Menu:
+            Console.Title = "40k OS";
+            Console.WriteLine("Welcome to 40k OS!\nWhat would you like to do?\n1 - Check 40k minature prices\n2 - Generate a 40k sentence\n3 - Battle simulator\n4 - Ask the Council of the High Lords of Terra for advice\n5 - Perform a calculation (useful for budgeting minatures)");
+            string userValue = Console.ReadLine();
+
+            switch (userValue)
+            {
+                case "1":
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("\u001b[4mSpace Marines\u001b[0m");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Assault Intercessors + Paints Set: $35\nPrimaris Infiltrators: $60\nStormraven Gunship: $106\nDrop Pod: $44\nSpace Marine Jump Packs: $8.25\nTechmarine: $21.50");
+                    Console.WriteLine("\n");
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("\u001b[4mOrks\u001b[0m");
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("Ork Boyz: $36\nMeganobz: $63\nFlash Gitz: $55\nOrk Gretchin: $18\nOrk Lootas: $34\nOrk Nobz: $34\nOrk Painboy: $29\nOrk Burna Boyz: $34");
+                    Console.WriteLine("\n");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("\u001b[4mT'au\u001b[0m");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Fire Warriors Breacher Team: $55\nT'au Empire Commander: $50\nXV8 Crisis Battlesuit Team: $75\nAX3 Razorshark Strike Fighter: $75\nXV104 Riptide Battlesuit: $104\nTX4 Piranha: $36");
+
+                    Console.ResetColor();
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Press 1 to go back to the menu");
+
+                    string userValue2 = Console.ReadLine();
+
+                    switch (userValue2)
+                    {
+                        case "1":
+                            Console.Clear();
+                            goto Menu;
+
+                        default:
+                            Console.WriteLine("Invalid option, taking you back to the menu in:");
+                            Console.WriteLine("3");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("2");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("1");
+                            Thread.Sleep(1000);
+                            Console.Clear();
+                            goto Menu;
+                    }
+
+
+                case "2":
+                    Console.Clear();
+                Generator:
+                    string[] noun = { "Horace Lupercal", "Rogal Dorn", "God Emperor", "Primarch", "Comissar", "Ork Boyz", "T'au Emperor", "Nurgle", "Slaanesh", "Space Marines", "Angron", "Tzeentch", "Lord Inquisitor" };
+                    string[] adj = { "violently", "desperately", "deliberately", "heretically", "murderously", "bloodily", "brutally" };
+                    string[] verb = { "ripped apart", "ate", "consumed", "dismembered", "murdered", "commit a heresy with", "impaled", "shot", "decapitated" };
+                    string[] prep = { "behind", "next to", "in front of", "on", "near", "in", "above", "beneath" };
+                    string[] location = { "Terra", "the galaxy", "Gorstanigrad", "the Imperial Palace", "Krieg", "Cadia" };
+                    Random rand = new Random();
+                    int nounIndex = rand.Next(noun.Length);
+                    int adjIndex = rand.Next(adj.Length);
+                    int verbIndex = rand.Next(verb.Length);
+                    int noun2Index = rand.Next(noun.Length);
+                    int prepIndex = rand.Next(prep.Length);
+                    int locationIndex = rand.Next(location.Length);
+
+                    Console.WriteLine($"{noun[nounIndex]} {adj[adjIndex]} {verb[verbIndex]} {noun[noun2Index]} {prep[prepIndex]} {location[locationIndex]}");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Press 1 to go back to the menu\nPress 2 to generate another sentence");
+
+                    string userValue3 = Console.ReadLine();
+
+                    switch (userValue3)
+                    {
+                        case "1":
+                            Console.Clear();
+                            goto Menu;
+
+                        case "2":
+                            Console.Clear();
+                            goto Generator;
+
+                        default:
+                            Console.WriteLine("Invalid option, taking you back to the menu in:");
+                            Console.WriteLine("3");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("2");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("1");
+                            Thread.Sleep(1000);
+                            Console.Clear();
+                            goto Menu;
+                    }
+
+                case "3":
+                Battle:
+                    Console.Clear();
+                    Console.WriteLine("How many Space Marines?");
+                    int spacemarines = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    Console.WriteLine("How many Ork Boyz?");
+                    int orkboyz = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+                    Console.WriteLine("How many Meganobz?");
+                    int meganobz = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+
+                    int spacemarinesResult = (int)(spacemarines - ((orkboyz * 0.5) + meganobz));
+                    if (spacemarinesResult < 0)
+                    {
+                        spacemarinesResult = 0;
+                    }
+                    int orkboyzResult = (int)orkboyz - (spacemarines * 2);
+                    if (orkboyzResult < 0)
+                    {
+                        orkboyzResult = 0;
+                    }
+                    int meganobzResult = (int)((int)meganobz - (spacemarines * 0.25));
+                    if (meganobzResult < 0)
+                    {
+                        meganobzResult = 0;
+                    }
+
+                    Console.WriteLine(spacemarinesResult + " Space Marines remain");
+                    Console.WriteLine(orkboyzResult + " Ork Boyz remain");
+                    Console.WriteLine(meganobzResult + " Meganobz remain");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Press 1 to go back to the menu\nPress 2 to simulate another battle");
+
+                    string userValue4 = Console.ReadLine();
+
+                    switch (userValue4)
+                    {
+                        case "1":
+                            Console.Clear();
+                            goto Menu;
+
+                        case "2":
+                            Console.Clear();
+                            goto Battle;
+
+                        default:
+                            Console.WriteLine("Invalid option, taking you back to the menu in:");
+                            Console.WriteLine("3");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("2");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("1");
+                            Thread.Sleep(1000);
+                            Console.Clear();
+                            goto Menu;
+                    }
+
+                case "4":
+                Question:
+                    Console.Clear();
+                    Console.WriteLine("Write your question below:");
+                    while (Console.ReadKey().Key != ConsoleKey.Enter)
+                    {
+                    }
+                    string[] question = { "Absolutely not", "Most definitely", "Yes", "No", "Ask again", "Maybe", "Heresy!" };
+                    Random gen = new Random();
+                    int questionIndex = gen.Next(question.Length);
+                    Console.Clear();
+                    Console.WriteLine("The High Lords have spoken. They have declared:");
+                    Console.WriteLine($"{question[questionIndex]}.");
+
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Press 1 to go back to the menu\nPress 2 to ask another question");
+
+                    string userValue5 = Console.ReadLine();
+
+                    switch (userValue5)
+                    {
+                        case "1":
+                            Console.Clear();
+                            goto Menu;
+
+                        case "2":
+                            Console.Clear();
+                            goto Question;
+
+                        default:
+                            Console.WriteLine("Invalid option, taking you back to the menu in:");
+                            Console.WriteLine("3");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("2");
+                            Thread.Sleep(1000);
+                            Console.WriteLine("1");
+                            Thread.Sleep(1000);
+                            Console.Clear();
+                            goto Menu;
+                    }
+
+                case "5":
+                Calculator:
+
+                    Console.WriteLine("Welcome to AcmatiCalc V 0.1");
+                    Console.WriteLine("Please select + - / * with 1 2 3 4");
+
+                    string userResponse = Console.ReadLine();
+                    switch (userResponse.ToLower())
+                    {
+                        case "1":
+                            Console.WriteLine("Input First Number");
+                            int num1 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("Input second number");
+                            int num2 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine(num1 + num2);
+                            goto EndOfCalc;
+
+                            break;
+                        case "2":
+                            Console.WriteLine("Input First Number");
+                            int num21 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("Input second number");
+                            int num22 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine(num21 - num22);
+                            goto EndOfCalc;
+                            break;
+                        case "3":
+                            Console.WriteLine("Input First Number");
+                            int num31 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("Input second number");
+                            int num32 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine(num31 / num32);
+                            goto EndOfCalc;
+                            break;
+
+                        case "4":
+                            Console.WriteLine("Input First Number");
+                            int num41 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("Input second number");
+                            int num42 = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine(num41 * num42);
+                            goto EndOfCalc;
+                            break;
+
+                    }
+                    break;
+                EndOfCalc:
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Press 1 to go back to the menu\nPress 2 to perform calculation");
+
+                    string userValue6 = Console.ReadLine();
+
+                    switch (userValue6)
+                    {
+                        case "1":
+                            Console.Clear();
+                            goto Menu;
+
+                        case "2":
+                            Console.Clear();
+                            goto Calculator;
+
+                        default:
+                            Console.WriteLine("Invalid option, please enter in a valid number from the menu.");
+                            Thread.Sleep(2500);
+                            Console.Clear();
+                            goto EndOfCalc;
+                    }
+                default:
+                    Console.WriteLine("Invalid option, please enter in a valid number from the menu.");
+                    Thread.Sleep(2500);
+                    Console.Clear();
+                    goto Menu;
+            }
+        }
+    }
+}
