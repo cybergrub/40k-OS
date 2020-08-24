@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Net.Sockets;
 using System.Threading;
 
 namespace _40k_OS
@@ -8,9 +9,141 @@ namespace _40k_OS
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("start in fullscreen");
+            Console.WriteLine("3 seconds till boot");
+
+            Thread.Sleep(3000);
+
+
+            Console.WriteLine(" █████╗ ███╗   ███╗███████╗██████╗ ██╗ ██████╗ █████╗ ███╗   ██╗    ███╗   ███╗███████╗ ██████╗  █████╗ ████████╗██████╗ ███████╗███╗   ██╗██████╗ ███████╗");
+            Thread.Sleep(100);
+
+            Console.WriteLine("██╔══██╗████╗ ████║██╔════╝██╔══██╗██║██╔════╝██╔══██╗████╗  ██║    ████╗ ████║██╔════╝██╔════╝ ██╔══██╗╚══██╔══╝██╔══██╗██╔════╝████╗  ██║██╔══██╗██╔════╝");
+            Thread.Sleep(100);
+
+            Console.WriteLine("███████║██╔████╔██║█████╗  ██████╔╝██║██║     ███████║██╔██╗ ██║    ██╔████╔██║█████╗  ██║  ███╗███████║   ██║   ██████╔╝█████╗  ██╔██╗ ██║██║  ██║███████╗");
+            Thread.Sleep(100);
+
+            Console.WriteLine("██╔══██║██║╚██╔╝██║██╔══╝  ██╔══██╗██║██║     ██╔══██║██║╚██╗██║    ██║╚██╔╝██║██╔══╝  ██║   ██║██╔══██║   ██║   ██╔══██╗██╔══╝  ██║╚██╗██║██║  ██║╚════██║");
+            Thread.Sleep(100);
+
+            Console.WriteLine("██║  ██║██║ ╚═╝ ██║███████╗██║  ██║██║╚██████╗██║  ██║██║ ╚████║    ██║ ╚═╝ ██║███████╗╚██████╔╝██║  ██║   ██║   ██║  ██║███████╗██║ ╚████║██████╔╝███████║");
+            Thread.Sleep(100);
+
+            Console.WriteLine("╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝");
+            Thread.Sleep(100);
+
+
+            Console.WriteLine("┌─┐┌┬┐┬╔╗ ╦╔═╗╔═╗");
+            Thread.Sleep(100);
+
+            Console.WriteLine("├─┤││││╠╩╗║║ ║╚═╗");
+            Thread.Sleep(100);
+
+            Console.WriteLine("┴ ┴┴ ┴┴╚═╝╩╚═╝╚═╝");
+            Thread.Sleep(100);
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Thread.Sleep(2000);
+
+            Console.Clear();
+            Console.WriteLine("40k-OS basesystem");
+            Console.Write("initializing......");
+            Thread.Sleep(1000);
+            Console.Clear();
+
+            Console.WriteLine("40k-OS basesystem");
+
+            Console.Write("squashing bugs...");
+
+            Thread.Sleep(1000);
+            Console.Clear();
+
+            Console.WriteLine("40k-OS basesystem");
+
+            Console.Write("washing code...");
+
+            Thread.Sleep(1000);
+            Console.Clear();
+
+            Console.WriteLine("40k-OS basesystem");
+
+            Console.Write("munching croissants...");
+
+            Thread.Sleep(1000);
+            Console.Clear();
+
+            Console.WriteLine("40k-OS basesystem");
+
+            Console.Write("sipping coffee...");
+
+            Thread.Sleep(1000);
+            Console.Clear();
+
+            Console.WriteLine("40k-OS basesystem");
+
+            Console.Write("whipping teslas...");
+
+            Thread.Sleep(1000);
+            Console.Clear();
+
+            Console.WriteLine("40k-OS basesystem");
+
+            Console.Write("posting memes...");
+
+            Thread.Sleep(1000);
+
+
         Menu:
             Console.Title = "40k OS";
-            Console.WriteLine("Welcome to 40k OS!\nWhat would you like to do?\n1 - Check 40k minature prices\n2 - Generate a 40k sentence\n3 - Battle simulator\n4 - Ask the Council of the High Lords of Terra for advice\n5 - Perform a calculation (useful for budgeting minatures)");
+            //40k-OS lettering
+            Console.Clear();
+
+            Console.WriteLine(" ▄         ▄   ▄▄▄▄▄▄▄▄▄   ▄    ▄               ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ ");
+            Thread.Sleep(50);
+            Console.WriteLine("▐░▌       ▐░▌ ▐░░░░░░░░░▌ ▐░▌  ▐░▌             ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌");
+            Thread.Sleep(50);
+
+            Console.WriteLine("▐░▌       ▐░▌▐░█░█▀▀▀▀▀█░▌▐░▌ ▐░▌              ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ");
+            Thread.Sleep(50);
+
+            Console.WriteLine("▐░▌       ▐░▌▐░▌▐░▌    ▐░▌▐░▌▐░▌               ▐░▌       ▐░▌▐░▌          ");
+            Thread.Sleep(50);
+
+            Console.WriteLine("▐░█▄▄▄▄▄▄▄█░▌▐░▌ ▐░▌   ▐░▌▐░▌░▌    ▄▄▄▄▄▄▄▄▄▄▄ ▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ");
+            Thread.Sleep(50);
+
+            Console.WriteLine("▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌▐░░▌    ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌");
+            Thread.Sleep(50);
+
+            Console.WriteLine(" ▀▀▀▀▀▀▀▀▀█░▌▐░▌   ▐░▌ ▐░▌▐░▌░▌    ▀▀▀▀▀▀▀▀▀▀▀ ▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌");
+            Thread.Sleep(50);
+
+            Console.WriteLine("          ▐░▌▐░▌    ▐░▌▐░▌▐░▌▐░▌               ▐░▌       ▐░▌          ▐░▌");
+            Thread.Sleep(50);
+            Console.WriteLine("          ▐░▌▐░█▄▄▄▄▄█░█░▌▐░▌ ▐░▌              ▐░█▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄█░▌");
+            Thread.Sleep(50);
+            Console.WriteLine("          ▐░▌ ▐░░░░░░░░░▌ ▐░▌  ▐░▌             ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌");
+            Thread.Sleep(50);
+            Console.WriteLine("           ▀   ▀▀▀▀▀▀▀▀▀   ▀    ▀               ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ ");
+            Thread.Sleep(50);
+         
+         
+
+            Console.WriteLine("------------------\nWhat would you like to do?\n------------------\n1 - Check 40k minature prices\n------------------\n2 - Generate a 40k sentence\n------------------\n3 - Battle simulator\n------------------\n4 - Ask the Council of the High Lords of Terra for advice\n------------------\n5 - Perform a calculation (useful for budgeting minatures)\n------------------\n6 - Windows Shutdown\n------------------\n7 - Bibble Game\n------------------");
             string userValue = Console.ReadLine();
 
             switch (userValue)
@@ -274,6 +407,15 @@ namespace _40k_OS
                     Thread.Sleep(2500);
                     Console.Clear();
                     goto Menu;
+
+
+                case "6":
+                Quit:
+
+                    System.Diagnostics.Process.Start("shutdown", "/s /t 0");
+
+                    break;
+                
             }
         }
     }
