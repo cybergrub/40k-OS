@@ -52,51 +52,23 @@ namespace _40k_OS
                 Thread.Sleep(2000);
 
                 Console.Clear();
-                Console.WriteLine("40k-OS basesystem");
-                Console.Write("initializing......");
+                Console.WriteLine("█▀ █▀▀ █▀▄▀█   █▀▀ █▄ █ ▀█▀ █▀▀ █▀█ █▀█ █▀█ █ █▀ █▀▀");
+                Console.WriteLine("▄█ █▄▄ █ ▀ █   ██▄ █ ▀█  █  ██▄ █▀▄ █▀▀ █▀▄ █ ▄█ ██▄");
+                Console.WriteLine("4 0 k - O S                      b a s e s y s t e m");
+                for (int i = 0; i < 52; i++)
+                {
+                    Console.Write("░");
+                    Thread.Sleep(50);
+
+
+                }
                 Thread.Sleep(1000);
-                Console.Clear();
 
-                Console.WriteLine("40k-OS basesystem");
+                
 
-                Console.Write("squashing bugs...");
 
-                Thread.Sleep(1000);
-                Console.Clear();
 
-                Console.WriteLine("40k-OS basesystem");
 
-                Console.Write("washing code...");
-
-                Thread.Sleep(1000);
-                Console.Clear();
-
-                Console.WriteLine("40k-OS basesystem");
-
-                Console.Write("munching croissants...");
-
-                Thread.Sleep(1000);
-                Console.Clear();
-
-                Console.WriteLine("40k-OS basesystem");
-
-                Console.Write("sipping coffee...");
-
-                Thread.Sleep(1000);
-                Console.Clear();
-
-                Console.WriteLine("40k-OS basesystem");
-
-                Console.Write("whipping teslas...");
-
-                Thread.Sleep(1000);
-                Console.Clear();
-
-                Console.WriteLine("40k-OS basesystem");
-
-                Console.Write("posting memes...");
-
-                Thread.Sleep(1000);
             }
 
         Menu:
@@ -135,7 +107,28 @@ namespace _40k_OS
 
 
 
-            Console.WriteLine("------------------\nWhat would you like to do?\n------------------\n1 - Check 40k minature prices\n------------------\n2 - Generate a 40k sentence\n------------------\n3 - Battle simulator\n------------------\n4 - Ask the Council of the High Lords of Terra for advice\n------------------\n5 - Perform a calculation (useful for budgeting minatures)\n------------------\n6 - Exterminatus\n------------------\n7 - Image Repository\n------------------");
+                Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("What would you like to do?                                    40k-OS Menu");
+            Console.WriteLine("-------------------------------------------------------------------------");
+                Console.WriteLine("1 - Check 40k minature prices");
+            Console.WriteLine("-------------------------------------------------------------------------");
+                Console.WriteLine("2 - Generate a 40k sentence");
+            Console.WriteLine("-------------------------------------------------------------------------");
+                Console.WriteLine("3 - Battle simulator");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("4 - Ask the Council of the High Lords of Terra for advice");
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("5 - Perform a calculation(useful for budgeting minatures)");
+                Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("6 - Exterminatus");
+
+
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("7 - Image Repository");
+
+            Console.WriteLine("-------------------------------------------------------------------------");
+           
+
             string userValue = Console.ReadLine();
 
             switch (userValue)
@@ -329,7 +322,6 @@ namespace _40k_OS
                 case "5":
                 Calculator:
 
-                    Console.Clear();
                     Console.WriteLine("Welcome to AcmatiCalc V 0.1");
                     Console.WriteLine("Please select + - / * with 1 2 3 4");
 
@@ -343,8 +335,8 @@ namespace _40k_OS
                             int num2 = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine(num1 + num2);
                             goto EndOfCalc;
-                            break;
 
+                            break;
                         case "2":
                             Console.WriteLine("Input First Number");
                             int num21 = Convert.ToInt32(Console.ReadLine());
@@ -395,102 +387,76 @@ namespace _40k_OS
                             Console.Clear();
                             goto EndOfCalc;
                     }
+                default:
+                    Console.WriteLine("Invalid option, please enter in a valid number from the menu.");
+                    Thread.Sleep(2500);
+                    Console.Clear();
+                    goto Menu;
 
 
                 case "6":
-
                 Quit:
                     Console.WriteLine("Get Purged Heretic lol");
                     Thread.Sleep(1000);
                     System.Diagnostics.Process.Start("shutdown", "/s /t 0");
+
                     break;
 
                 case "7":
 
-                Image:
-                    Console.Clear();
-                    Console.WriteLine("1 - Space Marine");
+                    Console.WriteLine(". .. .  . .. .  . .. .  . .  . .. .  . .. .  . .. .  . .  . .. .  . .. .  . ..");
+                    Console.WriteLine(".. .  . .. .  . .. .  . .  . *@@.  @@@@@@@@@@@. .@@/ .  .  . .  . .. .  . .. . ");
+                    Console.WriteLine(".. .  . .. .  . .. .  . .  @@@@@@@@@@@@@@@@@@@@@@@@@@@  .  . .  . .. .  . .. .  ");
+                    Console.WriteLine(".. .  . .. .  . .. .  . .@ @@@@@@@@@@@@@@@@@@@@@@@@@@@ @.  . .  . .. .  . .. .  ");
+                    Console.WriteLine(".. .  . .. .  . ..  @@@@@@ @@@@@   . .. .  . ..  @@@@@ @@@@@@   . .. .  . .. .  ");
+                    Console.WriteLine(".. .  . .. .  . ..  @@@@@@ @@@@@   . .. .  . ..  @@@@@ @@@@@@   . .. .  . .. .  ");
+                    Console.WriteLine(".. .  . .. .  . /@@@@@@@@@ @@@@@.  . .. .  . .. .@@@@@ @@@@@@@@@* .. .  . .. . ");
+                    Console.WriteLine(".. .  . .. .  @@@@@@@@@@@@ .  . .  . .. .  . .. .  . . @@@@@@@@@@@@. .  . .. .  ");
+                    Console.WriteLine(".. .  . .. .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.  . .. . ");
+                    Console.WriteLine(".. .  . .. @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  . .. .  ");
+                    Console.WriteLine(".. .  . ..@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ . .. .  ");
+                    Console.WriteLine("        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   ");
+                    Console.WriteLine("  . .. . #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@% .  . ..");
+                    Console.WriteLine("  . .. . @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@% .  . ..");
+                    Console.WriteLine(" . .. . @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@# .  . ..");
+                    Console.WriteLine("  . .. . @@@@@ .  . .. .  . @@@@@@@@@@@@@@@@@@@@@@@@@  . .  . .. . @@@@@ .  . ..");
+                    Console.WriteLine("  .  @@@@@@@@@ @@&. .. .  . .  . . @@@@@@@@@@@ . .. .  . .  . .%@@ @@@@@@@@@  ..");
+                    Console.WriteLine("  @@@@@@@@@@@@ @@@@@@. .  . .  . .. @@ . ..@@  . .. .  . .  @@@@@@.@@@@@@@@@@@@.");
+                    Console.WriteLine(" @@@@@@@@@@@@ @@@@@@@@@@.. .  .  @@@@@@@@@@@@@  .. .   @@@@@@@@@@.@@@@@@@@@@@@.");
+                    Console.WriteLine(" /@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.@@@@@@@@@@@@@");
+                    Console.WriteLine(" @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@  . .. @@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
+                    Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@. .. .  . .@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
+                    Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@  . .. .  . .. @@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
+                    Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@.  . .. .  . .. .@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
+                    Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@ .  . .. .  . .. . @@@@@@@@@@@@@@@@.@@@@@@@@@@@@@");
+                    Console.WriteLine("..@@  . .@@@@@ @@@@@@@@@@@@@@@. .  . .. .  . .. .  @@@@@@@@@@@@@@@.@@@@@. .. @@/");
+                    Console.WriteLine(".. .@@@@@@ . , @@@@@@@@@@@@@@ . .  . .b. .  . .. .  .@@@@@@@@@@@@@@ , . @@@@@@.  ");
+                    Console.WriteLine("..@@@@@@@@@@@@@@@./@@@@@@@@@. . .  . .. .  . .. .  . @@@@@@@@@@ @@@@@@@@@@@@@@@ ");
+                    Console.WriteLine(".. @@@@@@@@@@@@@@& @@@@@@@@@  . .  . .. .  . .. .  . @@@@@@@@@ *@@@@@@@@@@@@@@  ");
+                    Console.WriteLine(".. . @@@@@@@@@@@@. @@@@@@@@@  . .  @@@@@@@@@@@  .  . @@@@@@@@@  @@@@@@@@@@@@ .  ");
+                    Console.WriteLine("         @@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@    ");
+                    Console.WriteLine("  . .. .  . .. .  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@. .  . .. .  . ..");
 
-                    string userValue8 = Console.ReadLine();
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Press 1 to go back to menu");
+                    string userValue7 = Console.ReadLine();
 
-                    switch (userValue8)
-                    { 
-                    
+                    switch (userValue7)
+                    {
                         case "1":
-
                             Console.Clear();
-                            Console.WriteLine(". .. .  . .. .  . .. .  . .  . .. .  . .. .  . .. .  . .  . .. .  . .. .  . ..");
-                            Console.WriteLine(".. .  . .. .  . .. .  . .  . *@@.  @@@@@@@@@@@. .@@/ .  .  . .  . .. .  . .. . ");
-                            Console.WriteLine(".. .  . .. .  . .. .  . .  @@@@@@@@@@@@@@@@@@@@@@@@@@@  .  . .  . .. .  . .. .  ");
-                            Console.WriteLine(".. .  . .. .  . .. .  . .@ @@@@@@@@@@@@@@@@@@@@@@@@@@@ @.  . .  . .. .  . .. .  ");
-                            Console.WriteLine(".. .  . .. .  . ..  @@@@@@ @@@@@   . .. .  . ..  @@@@@ @@@@@@   . .. .  . .. .  ");
-                            Console.WriteLine(".. .  . .. .  . ..  @@@@@@ @@@@@   . .. .  . ..  @@@@@ @@@@@@   . .. .  . .. .  ");
-                            Console.WriteLine(".. .  . .. .  . /@@@@@@@@@ @@@@@.  . .. .  . .. .@@@@@ @@@@@@@@@* .. .  . .. . ");
-                            Console.WriteLine(".. .  . .. .  @@@@@@@@@@@@ .  . .  . .. .  . .. .  . . @@@@@@@@@@@@. .  . .. .  ");
-                            Console.WriteLine(".. .  . .. .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.  . .. . ");
-                            Console.WriteLine(".. .  . .. @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  . .. .  ");
-                            Console.WriteLine(".. .  . ..@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ . .. .  ");
-                            Console.WriteLine("          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   ");
-                            Console.WriteLine("  . .. . #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@% .  . ..");
-                            Console.WriteLine("  . .. . @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@% .  . ..");
-                            Console.WriteLine(" . .. . @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@# .  . ..");
-                            Console.WriteLine("  . .. . @@@@@ .  . .. .  . @@@@@@@@@@@@@@@@@@@@@@@@@  . .  . .. . @@@@@ .  . ..");
-                            Console.WriteLine("  .  @@@@@@@@@ @@&. .. .  . .  . . @@@@@@@@@@@ . .. .  . .  . .%@@ @@@@@@@@@  ..");
-                            Console.WriteLine("  @@@@@@@@@@@@ @@@@@@. .  . .  . .. @@ . ..@@  . .. .  . .  @@@@@@.@@@@@@@@@@@@.");
-                            Console.WriteLine(" @@@@@@@@@@@@ @@@@@@@@@@.. .  .  @@@@@@@@@@@@@  .. .   @@@@@@@@@@.@@@@@@@@@@@@.");
-                            Console.WriteLine(" /@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.@@@@@@@@@@@@@");
-                            Console.WriteLine(" @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@  . .. @@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
-                            Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@. .. .  . .@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
-                            Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@  . .. .  . .. @@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
-                            Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@.  . .. .  . .. .@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
-                            Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@ .  . .. .  . .. . @@@@@@@@@@@@@@@@.@@@@@@@@@@@@@");
-                            Console.WriteLine("..@@  . .@@@@@ @@@@@@@@@@@@@@@. .  . .. .  . .. .  @@@@@@@@@@@@@@@.@@@@@. .. @@/");
-                            Console.WriteLine(".. .@@@@@@ . , @@@@@@@@@@@@@@ . .  . ... .  . .. .  .@@@@@@@@@@@@@@ , . @@@@@@.  ");
-                            Console.WriteLine("..@@@@@@@@@@@@@@@./@@@@@@@@@. . .  . .. .  . .. .  . @@@@@@@@@@ @@@@@@@@@@@@@@@ ");
-                            Console.WriteLine(".. @@@@@@@@@@@@@@& @@@@@@@@@  . .  . .. .  . .. .  . @@@@@@@@@ *@@@@@@@@@@@@@@  ");
-                            Console.WriteLine(".. . @@@@@@@@@@@@. @@@@@@@@@  . .  @@@@@@@@@@@  .  . @@@@@@@@@  @@@@@@@@@@@@ .  ");
-                            Console.WriteLine("         @@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@    ");
-                            Console.WriteLine("  . .. .  . .. .  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@. .  . .. .  . ..");
-
-                            Console.WriteLine("\n");
-                            Console.WriteLine("Press 1 to go back to menu");
-                            Console.WriteLine("Press 2 to view another image");
-                            string userValue7 = Console.ReadLine();
-
-                        switch (userValue7)
-                        {
-                            case "1":
-                                Console.Clear();
-                                goto Menu;
-
-                            case "2":
-                                Console.Clear();
-                                goto Image;
-
-                            default:
-                                Console.WriteLine("Invalid option, taking you back to the menu in:");
-                                Console.WriteLine("3");
-                                Thread.Sleep(1000);
-                                Console.WriteLine("2");
-                                Thread.Sleep(1000);
-                                Console.WriteLine("1");
-                                Thread.Sleep(1000);
-                                Console.Clear();
-                                goto Menu;
-                        }
+                            goto Menu;
                     }
                     break;
 
-                default:
-                    Console.WriteLine("Invalid option, taking you back to the menu in:");
-                    Console.WriteLine("3");
-                    Thread.Sleep(1000);
-                    Console.WriteLine("2");
-                    Thread.Sleep(1000);
-                    Console.WriteLine("1");
-                    Thread.Sleep(1000);
-                    Console.Clear();
-                    goto Menu;
+
+               
+                    
+                                              
+
+
+            
             }
         }
     }
