@@ -425,6 +425,7 @@ namespace _40k_OS
                 case "5":
                 Calculator:
 
+                    Console.Clear();
                     Console.WriteLine("Welcome to AcmatiCalc V 0.1");
                     Console.WriteLine("Please select + - / * with 1 2 3 4");
 
