@@ -62,6 +62,29 @@ namespace _40k_OS
                 Thread.Sleep(1000);
             }
 
+        Login:
+
+            Console.Clear();
+            Console.WriteLine("Login\n");
+            Console.Write("Username: ");
+            string username = Console.ReadLine();
+
+            switch (username)
+            {
+                case "SpaceMarine":
+                    Console.WriteLine("Welcome back, SpaceMarine");
+                    Thread.Sleep(1500);
+                    Console.Clear();
+                    goto Menu;
+
+                default:
+                    Console.WriteLine("Unregistered username, please try again.");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    goto Login;
+
+            }
+
         Menu:
             Console.Title = "40k OS";
             //40k-OS lettering
