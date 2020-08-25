@@ -2,7 +2,6 @@ using System;
 using System.IO;
 using System.Net.Sockets;
 using System.Threading;
-
 namespace _40k_OS
 {
     class Program
@@ -11,62 +10,156 @@ namespace _40k_OS
         {
             {
             bios:
+                Console.ForegroundColor = ConsoleColor.Red;
 
                 Console.WriteLine("start in fullscreen");
                 Console.WriteLine("3 seconds till boot");
-
                 Thread.Sleep(3000);
 
+                Console.Clear();
+
+
+                Console.ForegroundColor = ConsoleColor.Blue;
 
                 Console.WriteLine(" █████╗ ███╗   ███╗███████╗██████╗ ██╗ ██████╗ █████╗ ███╗   ██╗    ███╗   ███╗███████╗ ██████╗  █████╗ ████████╗██████╗ ███████╗███╗   ██╗██████╗ ███████╗");
                 Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Blue;
 
                 Console.WriteLine("██╔══██╗████╗ ████║██╔════╝██╔══██╗██║██╔════╝██╔══██╗████╗  ██║    ████╗ ████║██╔════╝██╔════╝ ██╔══██╗╚══██╔══╝██╔══██╗██╔════╝████╗  ██║██╔══██╗██╔════╝");
-                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep 
+                (100);
 
                 Console.WriteLine("███████║██╔████╔██║█████╗  ██████╔╝██║██║     ███████║██╔██╗ ██║    ██╔████╔██║█████╗  ██║  ███╗███████║   ██║   ██████╔╝█████╗  ██╔██╗ ██║██║  ██║███████╗");
                 Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Red;
 
                 Console.WriteLine("██╔══██║██║╚██╔╝██║██╔══╝  ██╔══██╗██║██║     ██╔══██║██║╚██╗██║    ██║╚██╔╝██║██╔══╝  ██║   ██║██╔══██║   ██║   ██╔══██╗██╔══╝  ██║╚██╗██║██║  ██║╚════██║");
                 Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.White;
 
                 Console.WriteLine("██║  ██║██║ ╚═╝ ██║███████╗██║  ██║██║╚██████╗██║  ██║██║ ╚████║    ██║ ╚═╝ ██║███████╗╚██████╔╝██║  ██║   ██║   ██║  ██║███████╗██║ ╚████║██████╔╝███████║");
                 Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Red;
 
                 Console.WriteLine("╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝");
                 Thread.Sleep(100);
 
 
-                Console.WriteLine("┌─┐┌┬┐┬╔╗ ╦╔═╗╔═╗");
+                Console.WriteLine(" _______  __   __  ___   _______  ___   _______  _______ ");
                 Thread.Sleep(100);
 
-                Console.WriteLine("├─┤││││╠╩╗║║ ║╚═╗");
+                Console.WriteLine("|   _   ||  |_|  ||   | |  _    ||   | |       ||       |");
                 Thread.Sleep(100);
 
-                Console.WriteLine("┴ ┴┴ ┴┴╚═╝╩╚═╝╚═╝");
-                Thread.Sleep(100);
+                Console.WriteLine("|  |_|  ||       ||   | | |_|   ||   | |   _   ||  _____|");
+                Thread.Sleep(100);                Console.WriteLine("|       ||       ||   | |       ||   | |  | |  || |_____ ");
+                Console.WriteLine("|       ||       ||   | |  _   | |   | |  |_|  ||_____  |");
+                Console.WriteLine("|   _   || ||_|| ||   | | |_|   ||   | |       | _____| |");
+                Console.WriteLine("|__| |__||_|   |_||___| |_______||___| |_______||_______|");
+                
 
                 Thread.Sleep(2000);
 
                 Console.Clear();
-                Console.WriteLine("█▀ █▀▀ █▀▄▀█   █▀▀ █▄ █ ▀█▀ █▀▀ █▀█ █▀█ █▀█ █ █▀ █▀▀");
-                Console.WriteLine("▄█ █▄▄ █ ▀ █   ██▄ █ ▀█  █  ██▄ █▀▄ █▀▀ █▀▄ █ ▄█ ██▄");
-                Console.WriteLine("4 0 k - O S                      b a s e s y s t e m");
-                for (int i = 0; i < 52; i++)
+                String scribe;
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                scribe = ("█▀ █▀▀ █▀▄▀█   █▀▀ █▄ █ ▀█▀ █▀▀ █▀█ █▀█ █▀█ █ █▀ █▀▀");
+
+                Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+                scribe = ("▄█ █▄▄ █ ▀ █   ██▄ █ ▀█  █  ██▄ █▀▄ █▀▀ █▀▄ █ ▄█ ██▄");
+                Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("");
+
+
+
+
+
+
+                scribe = ("4 0 k - O S                      b a s e s y s t e m");
+                Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+
+                Console.WriteLine("");
+                scribe = ("█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█");
+
+
+                for (int i = 0; i < 100; i++)
                 {
-                    Console.Write("░");
-                    Thread.Sleep(50);
+
+                    Thread.Sleep(25);
+                    Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+                    if (i == 30)
+                    {
+                        scribe = ("SCM ENTERPRISE 40k-OS      █░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█       BUILD 7C 25 AUG 1982");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+                        Thread.Sleep(2000);
+
+                        scribe = ("░█░█░█░█░█░█░█░█░█░█░      █░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█       ░█░█░█░█░█░█░█░█░█░█");
+                    }
+                    if (i == 45)
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+
+                        scribe = ("");
+
+                        scribe = ("                      ______                       ");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+                        scribe = ("            ..''''  .~      ~.       .'. .`.       ");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+
+                        scribe = ("         .''       |               .'   `   `.     ");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+
+                        scribe = ("      ..'          |             .'           `.   ");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+
+                        scribe = ("....''              `.______.' .'               `. ");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+
+                        scribe = ("                                                   ");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+                        scribe = ("");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+                        scribe = ("SCM ENTERPRISE WARHAMMER 40k-OS BASESYSTEM R 7C");
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+
+                        scribe = ("");
+
+                        Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
+                        Thread.Sleep(2000);
+
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+
+
+
+                    }
+                    scribe = ("█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█");
+                    Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (scribe.Length / 2)) + "}", scribe));
 
 
                 }
-                Thread.Sleep(1000);
+
+
             }
-
         Login:
-
+            String loginscribe;
             Console.Clear();
-            Console.WriteLine("Login\n");
-            Console.Write("Username: ");
+            loginscribe = ("█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█");
+            Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (loginscribe.Length / 2)) + "}", loginscribe));
+            loginscribe = ("4 0 k - O S                      b a s e s y s t e m");
+            Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (loginscribe.Length / 2)) + "}", loginscribe));
+            loginscribe = ("SECURE LOGIN");
+            Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (loginscribe.Length / 2)) + "}", loginscribe));
+            loginscribe = ("");
             string username = Console.ReadLine();
 
             switch (username)
@@ -84,11 +177,11 @@ namespace _40k_OS
                     goto Login;
 
             }
-
         Menu:
             Console.Title = "40k OS";
             //40k-OS lettering
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
 
             Console.WriteLine(" ▄         ▄   ▄▄▄▄▄▄▄▄▄   ▄    ▄               ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ ");
             Thread.Sleep(50);
@@ -118,6 +211,7 @@ namespace _40k_OS
             Thread.Sleep(50);
             Console.WriteLine("           ▀   ▀▀▀▀▀▀▀▀▀   ▀    ▀               ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ ");
             Thread.Sleep(50);
+            Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("What would you like to do?                                    40k-OS Menu");
@@ -413,7 +507,7 @@ namespace _40k_OS
 
                 case "7":
 
-                    Image:
+                Image:
                     Console.Clear();
                     Console.WriteLine("1 - Space Marine");
                     string userValue8 = Console.ReadLine();
@@ -449,7 +543,7 @@ namespace _40k_OS
                             Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@.  . .. .  . .. .@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@");
                             Console.WriteLine(".@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@ .  . .. .  . .. . @@@@@@@@@@@@@@@@.@@@@@@@@@@@@@");
                             Console.WriteLine("..@@  . .@@@@@ @@@@@@@@@@@@@@@. .  . .. .  . .. .  @@@@@@@@@@@@@@@.@@@@@. .. @@/");
-                            Console.WriteLine(".. .@@@@@@ . , @@@@@@@@@@@@@@ . .  . .b. .  . .. .  .@@@@@@@@@@@@@@ , . @@@@@@.  ");
+                            Console.WriteLine(".. .@@@@@@ . , @@@@@@@@@@@@@@ . .  . .. .  . .. .  .@@@@@@@@@@@@@@ , . @@@@@@.  ");
                             Console.WriteLine("..@@@@@@@@@@@@@@@./@@@@@@@@@. . .  . .. .  . .. .  . @@@@@@@@@@ @@@@@@@@@@@@@@@ ");
                             Console.WriteLine(".. @@@@@@@@@@@@@@& @@@@@@@@@  . .  . .. .  . .. .  . @@@@@@@@@ *@@@@@@@@@@@@@@  ");
                             Console.WriteLine(".. . @@@@@@@@@@@@. @@@@@@@@@  . .  @@@@@@@@@@@  .  . @@@@@@@@@  @@@@@@@@@@@@ .  ");
