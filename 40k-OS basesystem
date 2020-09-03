@@ -27,7 +27,7 @@ namespace _40k_OS
 
                 Console.WriteLine("██╔══██╗████╗ ████║██╔════╝██╔══██╗██║██╔════╝██╔══██╗████╗  ██║    ████╗ ████║██╔════╝██╔════╝ ██╔══██╗╚══██╔══╝██╔══██╗██╔════╝████╗  ██║██╔══██╗██╔════╝");
                 Console.ForegroundColor = ConsoleColor.White;
-                Thread.Sleep 
+                Thread.Sleep
                 (100);
 
                 Console.WriteLine("███████║██╔████╔██║█████╗  ██████╔╝██║██║     ███████║██╔██╗ ██║    ██╔████╔██║█████╗  ██║  ███╗███████║   ██║   ██████╔╝█████╗  ██╔██╗ ██║██║  ██║███████╗");
@@ -53,11 +53,11 @@ namespace _40k_OS
                 Thread.Sleep(100);
 
                 Console.WriteLine("|  |_|  ||       ||   | | |_|   ||   | |   _   ||  _____|");
-                Thread.Sleep(100);                Console.WriteLine("|       ||       ||   | |       ||   | |  | |  || |_____ ");
+                Thread.Sleep(100); Console.WriteLine("|       ||       ||   | |       ||   | |  | |  || |_____ ");
                 Console.WriteLine("|       ||       ||   | |  _   | |   | |  |_|  ||_____  |");
                 Console.WriteLine("|   _   || ||_|| ||   | | |_|   ||   | |       | _____| |");
                 Console.WriteLine("|__| |__||_|   |_||___| |_______||___| |_______||_______|");
-                
+
 
                 Thread.Sleep(2000);
 
@@ -224,7 +224,7 @@ namespace _40k_OS
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("4 - Ask the Council of the High Lords of Terra for advice");
             Console.WriteLine("-------------------------------------------------------------------------");
-            Console.WriteLine("5 - Perform a calculation(useful for budgeting minatures)");
+            Console.WriteLine("5 - Perform a calculation (useful for budgeting minatures)");
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("6 - Exterminatus");
 
@@ -388,12 +388,12 @@ namespace _40k_OS
                     while (Console.ReadKey().Key != ConsoleKey.Enter)
                     {
                     }
-                    string[] question = { "Absolutely not", "Most definitely", "Yes", "No", "Ask again", "Maybe", "Heresy!" };
+                    string[] question = { "Absolutely not.", "Most definitely.", "Yes.", "No.", "Ask again.", "Maybe.", "Heresy!" };
                     Random gen = new Random();
                     int questionIndex = gen.Next(question.Length);
                     Console.Clear();
                     Console.WriteLine("The High Lords have spoken. They have declared:");
-                    Console.WriteLine($"{question[questionIndex]}.");
+                    Console.WriteLine($"{question[questionIndex]}");
 
                     Console.WriteLine("\n");
                     Console.WriteLine("Press 1 to go back to the menu\nPress 2 to ask another question");
